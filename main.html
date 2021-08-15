@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+    <div class="g-background">
+      <div class="img-container">
+        <img class="logo" src="./images/logo.svg" alt="">
+      </div>
+      
+      <div class="container">
+        <!-- first sub-container  -->
+        <div class="sub-container">
+            <!-- first elemetn -->
+            <div class ="bill-container">
+              <label for="Bill">Bill</label><br>
+              <input type="number" placeholder="" class="eprice"> <i style="font-size : 14px ; color:hsl(186, 14%, 43%)" min="1" max="100">
+                <img src="./images/icon-dollar.svg">
+              </i>
+            </div>
+            <!-- end of first element -->
+
+
+            <!-- second element -->
+            <div class="second-element">
+              <label for="">Select tip %</label>
+              <div class="option-container">
+                  <span class="btn btn-selected" data-tip="5">5%</span>
+                  <span class="btn" data-tip="10">10%</span>
+                  <span class="btn" data-tip="15">15%</span>
+                  <span class="btn" data-tip="25">25%</span>
+                  <span class="btn" data-tip="50">50%</span>
+                  <span>
+                    <input id="costum" type="number"  min="1" max="99" class="costum" placeholder="Custom" style="text-align: center; font-size : 18px;">
+                  </span>
+                  
+              </div>
+            </div>
+            <!-- end of second element -->
+
+            <!-- third element -->
+            <div>
+              <div class="input">
+                <label for="number of people" style="margin-bottom:10px;">Number of people</label><br>
+                <span class="warning"></span>
+                <input type="number" placeholder="" class="people" min="1" max="100"><i style="font-size : 14px ; color:hsl(186, 14%, 43%)" >
+                  <img src="./images/icon-person.svg" alt="" srcset="">
+                </i>
+              </div>
+            </div>
+
+            <!-- end of third element -->
+
+        </div>
+
+        <!-- end of first sub-container -->
+        <div class="sub-container">
+          <div class="calculate-tab">
+            <div class="price-tab">
+                <div class="price">
+                  <span><p>Tip Amount</p>
+                    /person
+                  </span>
+                  <span><h3 class="tip-amount">$0.00</h3>
+                  </span>
+                </div>
+                <div class="price">
+                  <span><p>Total</p>
+                    /person
+                  </span>
+                  <span><h3 class="total-price">$0.00</h3>
+                  </span>
+                </div>
+            </div>
+            <button class="reset">reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <script src="./script.js"></script>
+    </body>
+    </html>
